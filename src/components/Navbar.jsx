@@ -11,6 +11,10 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toogleMenu = () => {
+    setIsMenuOpen(! setIsMenuOpen);
+  };
+
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,6 +54,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
+            
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-600"
             >
@@ -68,7 +73,7 @@ export default function Navbar() {
                 key={link.name}
                 to={link.path}
                 className="flex items-center px-3 py-2 text-gray-700 hover:text-green-600"
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(true)}
               >
                 <link.icon className="h-5 w-5 mr-2" />
                 {link.name}
