@@ -2,7 +2,9 @@ import User from '../models/User.js';
 import jwt from 'jsonwebtoken';
 
 export const register = async (req, res) => {
+  console.log("inside the the route hmm")
   try {
+    
     const { name, email, password, role } = req.body;
 
     // Check if user already exists
@@ -38,11 +40,13 @@ export const register = async (req, res) => {
       }
     });
   } catch (error) {
-    res.status(500).json({ message: 'Server error' });
+    console.log(error)
+    res.status(500).json({ message: error.message });
   }
 };
 
 export const login = async (req, res) => {
+  console.log("inside login hmm")
   try {
     const { email, password } = req.body;
 
@@ -75,6 +79,7 @@ export const login = async (req, res) => {
       }
     });
   } catch (error) {
+    console.log(error.message)
     res.status(500).json({ message: 'Server error' });
   }
 };
