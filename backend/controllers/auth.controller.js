@@ -2,6 +2,7 @@ import User from '../models/User.js';
 import jwt from 'jsonwebtoken';
 
 export const register = async (req, res) => {
+  console.log("inside the the route")
   try {
     const { name, email, password, role } = req.body;
 
@@ -38,7 +39,7 @@ export const register = async (req, res) => {
       }
     });
   } catch (error) {
-    res.status(500).json({ message: 'Server error' });
+    res.status(500).json({ message: error.message });
   }
 };
 

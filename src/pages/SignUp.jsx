@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { UserPlus } from 'lucide-react';
+import axios from 'axios';
 
 export default function SignUp() {
   const [formData, setFormData] = useState({
@@ -10,8 +11,16 @@ export default function SignUp() {
     confirmPassword: '',
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    await axios.post("https://expert-goldfish-x4pw56jqj6739969-5000.app.github.dev/api/auth/register", formData).then(() => {
+      console.log("user created successfully")
+    }).catch(() => {
+      console.log("failed to create account")
+    })
+
+
+
     // Handle signup logic here
   };
 
