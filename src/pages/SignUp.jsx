@@ -24,6 +24,7 @@ const Signup = () => {
       await signup(formData.name, formData.email, formData.password);
       navigate('/dashboard');
     } catch (err) {
+      console.log("error here", err)
       setError(err instanceof Error ? err.message : 'Signup failed');
     }
   };

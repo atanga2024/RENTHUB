@@ -42,6 +42,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signup = async (name, email, password) => {
+    console.log("inside signup hmm")
     try {
       const response = await fetch(`${API_URL}/api/auth/register`, {
         method: 'POST',
@@ -57,9 +58,12 @@ export const AuthProvider = ({ children }) => {
         throw new Error(data.message || 'Signup failed');
       }
 
+
+      console.log("data form signup", data.user)
+
       localStorage.setItem('token', data.token);
-      localStorage.setItem('user', JSON.stringify(data.data.user));
-      setUser(data.data.user);
+      localStorage.setItem('user', JSON.stringify(data.user));
+      setUser(data.user);
     } catch (error) {
       throw error;
     }
