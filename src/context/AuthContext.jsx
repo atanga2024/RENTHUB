@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext(undefined);
 
-const API_URL = 'https://expert-goldfish-x4pw56jqj6739969-5000.app.github.dev';
+const API_URL = 'https://renthub-qgbu.onrender.com/';
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
