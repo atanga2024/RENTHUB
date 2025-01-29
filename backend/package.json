@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "server",
-    "server": "server.js"
+    "server": "nodemon server.js",
+   "build": "echo 'No build step required for backend'"
+
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
