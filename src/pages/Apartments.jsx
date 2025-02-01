@@ -9,27 +9,28 @@ const apartments = [
     id: 1,
     title: 'Modern Downtown Loft',
     description: 'Stunning loft apartment with city views and modern amenities',
-    price: 2500,
-    location: 'Downtown, New York',
+    price: 700,
+    location: 'Odza, Yaounde',
     type: 'apartment',
     bedrooms: 2,
     bathrooms: 2,
+    kitchen: 1,
     size: '1200 sqft',
     amenities: ['Parking', 'Gym', 'Pool', 'Pet Friendly'],
     images: [
       'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3',
-      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3',
-      'https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3'
+     // 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3',
+      //'https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3'
     ]
   },
   {
     id: 2,
     title: 'Cozy Studio in Brooklyn',
     description: 'Perfect starter apartment in a quiet neighborhood',
-    price: 1800,
-    location: 'Brooklyn, New York',
+    price: 300,
+    location: 'Mbengwi Road, Bamenda',
     type: 'studio',
-    bedrooms: 1,
+    bedrooms: 2,
     bathrooms: 1,
     size: '600 sqft',
     amenities: ['AC', 'Heating', 'Laundry'],
@@ -42,8 +43,8 @@ const apartments = [
     id: 3,
     title: 'Luxury House with Garden',
     description: 'Spacious family home with beautiful garden and modern kitchen',
-    price: 4500,
-    location: 'Queens, New York',
+    price: 2000,
+    location: 'pk12, Douala',
     type: 'house',
     bedrooms: 4,
     bathrooms: 3,
@@ -53,7 +54,110 @@ const apartments = [
       'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3',
       'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3'
     ]
-  }
+  },
+  {
+    id: 4,
+    title: 'The Luxe Loft',
+    description: 'For A High-end, Elegant Apartmeent REntal',
+    price: 700,
+    location: 'Bastos, Yaounde',
+    type: 'apartment',
+    bedrooms: 3,
+    bathrooms: 3,
+    kitchen: 1,
+    size: '2500 sqft',
+    amenities: ['Garden', 'Garage', 'Smart Home', 'Security System'],
+    images: [
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLYUf17McBmTVlpzqGoid0vA7QkRNCDJPFgbIy',
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLYUf17McBmTVlpzqGoid0vA7QkRNCDJPFgbIy'
+    ]
+  },
+  {
+    id: 5,
+    title: 'Solo Living Spot',
+    description: 'Perfect For Business Travellers Or Solo explorers',
+    price: 300,
+    location: 'odza, Yaounde',
+    type: 'studio',
+    bedrooms: 2,
+    bathrooms: 1,
+    size: '600 sqft',
+    amenities: ['AC', 'Heating', 'Laundry'],
+    images: [
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLa8jzitwNpDoO3bujUi9IfLVTJZ4X7lgWC15G',
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLa8jzitwNpDoO3bujUi9IfLVTJZ4X7lgWC15G'
+    ]
+  },
+
+  {
+    id: 6,
+    title: 'Minimalist Studio Stay',
+    description: 'Sleek And Functional For Short Or Long Stays',
+    price: 330,
+    location: 'makepe, Douala',
+    type: 'studio',
+    bedrooms: 2,
+    bathrooms: 1,
+    size: '600 sqft',
+    amenities: ['AC', 'Heating', 'Laundry'],
+    images: [
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLy2QzPT2RzvNPnJodBADMXShYx8OW7Qfwi9g6',
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLy2QzPT2RzvNPnJodBADMXShYx8OW7Qfwi9g6'
+    ]
+  },
+
+  {
+    id: 7,
+    title: 'The Creative Noook',
+    description: 'Ideal For Artists, Writers And Remote Workers',
+    price: 300,
+    location: 'Sandpit, Buea',
+    type: 'studio',
+    bedrooms: 2,
+    bathrooms: 1,
+    size: '600 sqft',
+    amenities: ['AC', 'Heating', 'Laundry'],
+    images: [
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLStlcmlZxfLv1ne0YVMJQq2zRgBpwIad97P8l',
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLStlcmlZxfLv1ne0YVMJQq2zRgBpwIad97P8l'
+    ]
+  },
+
+  {
+    id: 8,
+    title: 'Downtown Retreat',
+    description: 'A Peacefull Escape In A Vibrant City',
+    price: 700,
+    location: 'Foot Market, Bamenda',
+    type: 'apartment',
+    bedrooms: 3,
+    bathrooms: 2,
+    size: '600 sqft',
+    amenities: ['AC', 'Heating', 'Laundry'],
+    images: [
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLFNMEw20ttMozdQPKwNVECyS0OhGv2fmUJA16',
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLFNMEw20ttMozdQPKwNVECyS0OhGv2fmUJA16'
+    ]
+  },
+
+  {
+    id: 9,
+    title: 'Metroplolitan Livng',
+    description: 'A Stylish Apartment In The Heart Of The City',
+    price: 1200,
+    location: 'Mendong, Yaounde',
+    type: 'apartment',
+    bedrooms: 3,
+    bathrooms: 2,
+    size: '600 sqft',
+    amenities: ['AC', 'Heating', 'Laundry'],
+    images: [
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLaHAvBOwNpDoO3bujUi9IfLVTJZ4X7lgWC15G',
+      'https://0eejr711md.ufs.sh/f/11gUTfyOCcGLaHAvBOwNpDoO3bujUi9IfLVTJZ4X7lgWC15G'
+    ]
+  },
+
+
 ];
 
 const Apartments = () => {
@@ -145,6 +249,10 @@ const Apartments = () => {
                 <span className="flex items-center">
                   <Bath className="h-4 w-4 mr-1" />
                   {apartment.bathrooms}
+                </span>
+                <span className="flex items-center">
+                  <kitch className="h-4 w-4 mr-1" />
+                  {apartment.kitchen}
                 </span>
                 <span className="flex items-center">
                   <Home className="h-4 w-4 mr-1" />

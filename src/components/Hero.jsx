@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
           <img
             className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://0eejr711md.ufs.sh/f/11gUTfyOCcGLKgHD3kOVjqEXc7HUrhRupJyibZInBka4tD6V"
             alt="Modern apartment interior"
           />
         </div>
